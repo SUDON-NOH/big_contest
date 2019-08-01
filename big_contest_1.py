@@ -5,7 +5,11 @@ activity = pd.read_csv('train_activity.csv')
 
 label = pd.read_csv('train_label.csv')
 
-print(activity)
+print(activity['playtime'].mean())
+print(activity['playtime'].max())
+print(activity['playtime'].min())
+
+
 print(label)
 
 print(label.values)
@@ -78,10 +82,4 @@ z7 = y7.sort_values(["fishing"], ascending=[False])
 z8 = y8.sort_values(["fishing"], ascending=[False])
 z9 = y9.sort_values(["fishing"], ascending=[False])
 z10 = y10.sort_values(["fishing"], ascending=[False])
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 0849193a192882e0bdc8c2e81323118030e755ad
 
